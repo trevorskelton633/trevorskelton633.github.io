@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Welcome to my page!</title>
-  </head>
-  <body>
-    <h1>Welcome!</h1>
-    <h3 style="color: red;">Site Under Construction</h3>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Skelton Digital specializes in high-quality web design, development, hosting, and maintenance services.">
+  <meta name="keywords" content="web design, web development, web hosting, website maintenance">
+  <title>Skelton Digital</title>
+  <link rel="icon" type="image/webp" href="img/logo.webp">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #900;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    header div {
+      line-height: 1.2;
+    }
+
+    section {
+      margin: 20px 0;
+      padding: 20px;
+    }
+
+    .services,
+    .contact {
+      background-color: #eee;
+    }
+
+    .intro {
+      background-color: #fff;
+      max-width: 50%;
+    }
+
+    footer {
+      background-color: #900;
+      color: white;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.webp" alt="Skelton Digital Logo">
+    <div>
+      <h1>Welcome to Skelton Digital</h1>
+      <p>Unleash Your Online Potential</p>
+    </div>
+  </header>
+
+  <section class="intro">
+    <h2>About Us</h2>
+    <p>I am a freelance software developer with over 10 years of experience. My specialty lies in creating
+      custom-tailored websites designed from scratch or utilizing accelerators like WordPress.
+    </p>
+    <p>While my primary focus is
+      on simple, static sites, I also have the capability to develop more complex sites that include backend services.
+      My goal is to deliver solutions that meet the unique needs of each client.</p>
+  </section>
+
+
+  <section class="services">
+    <h2>Services</h2>
+    <ul>
+      <li><strong>Web Design:</strong> Tailored designs with a focus on usability and aesthetics.</li>
+      <li><strong>Web Development:</strong> Robust and scalable solutions with clean coding practices.</li>
+      <li><strong>Web Hosting:</strong> Reliable and secure hosting with 24/7 support.</li>
+      <li><strong>Maintenance:</strong> Keeping your site updated and performing at its best.</li>
+    </ul>
+  </section>
+
+  <section class="portfolio">
+    <h2>Portfolio</h2>
+    <p>Discover some of our projects and see how we've helped businesses succeed online.</p>
+    <ul>
+      <li><a href="https://www.betharnold.net/" target="_blank">Realty Sales & Management</a></li>
+      <li><a href="https://316fenceanddeck.com/" target="_blank">Fencing & Decking Services</a></li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Have a project in mind? Let's talk about how we can help your business thrive online.</p>
+    <p>Email me at: <a href="mailto:tskelton633@gmail.com">tskelton633@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>Copyright &copy; <span id="copyright-year"></span> Skelton Digital. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
 </html>
